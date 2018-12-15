@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.channels.GetParticipantsRequest(
-        channel='TelethonOffTopic',
+        channel='username',
         filter=types.ChannelParticipantsRecent(),
         offset=42,
         limit=100,

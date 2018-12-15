@@ -20,8 +20,8 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.StartBotRequest(
-        bot=types.InputUserSelf(),
-        peer='TelethonOffTopic',
+        bot='username',
+        peer='username',
         start_param='some string here'
     ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

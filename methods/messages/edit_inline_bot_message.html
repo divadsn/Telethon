@@ -29,12 +29,7 @@ with TelegramClient(name, api_id, api_hash) as client:
         stop_geo_live=True,
         message='Hello there!',
         media=types.InputMediaUploadedPhoto(
-            file=types.InputFile(
-                id=-12398745604826,
-                parts=42,
-                name='some string here',
-                md5_checksum='some string here'
-            ),
+            file=client.upload_file('/path/to/file.jpg'),
             stickers=[types.InputDocument(
                 id=-12398745604826,
                 access_hash=-12398745604826

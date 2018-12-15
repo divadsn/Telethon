@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.channels.ExportMessageLinkRequest(
-        channel='TelethonOffTopic',
+        channel='username',
         id=42,
         grouped=False
     ))

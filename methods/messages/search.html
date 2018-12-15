@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.SearchRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         q='some string here',
         filter=types.InputMessagesFilterPhotos(),
         min_date=datetime.datetime(2018, 6, 25),
@@ -31,6 +31,6 @@ with TelegramClient(name, api_id, api_hash) as client:
         max_id=0,
         min_id=0,
         hash=0,
-        from_id=types.InputUserSelf()
+        from_id='username'
     ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

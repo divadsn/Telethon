@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetCommonChatsRequest(
-        user_id='Lonami',
+        user_id='username',
         max_id=0,
         limit=100
     ))

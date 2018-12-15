@@ -20,9 +20,9 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.SetGameScoreRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         id=42,
-        user_id='Lonami',
+        user_id='username',
         score=42,
         edit_message=True,
         force=True

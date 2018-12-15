@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.RequestEncryptionRequest(
-        user_id='Lonami',
+        user_id='username',
         g_a=b'arbitrary\x7f data \xfa here'
     ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

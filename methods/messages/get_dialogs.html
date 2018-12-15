@@ -22,7 +22,7 @@ with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetDialogsRequest(
         offset_date=datetime.datetime(2018, 6, 25),
         offset_id=42,
-        offset_peer=types.InputPeerSelf(),
+        offset_peer='username',
         limit=100,
         hash=0,
         exclude_pinned=True

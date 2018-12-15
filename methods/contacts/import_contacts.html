@@ -21,7 +21,7 @@ from telethon import functions, types
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.contacts.ImportContactsRequest(
         contacts=[types.InputPhoneContact(
-            client_id=-12398745604826,
+            client_id=random.randrange(-2**63, 2**63),
             phone='some string here',
             first_name='some string here',
             last_name='some string here'

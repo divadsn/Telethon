@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.phone.RequestCallRequest(
-        user_id='Lonami',
+        user_id='username',
         g_a_hash=b'arbitrary\x7f data \xfa here',
         protocol=types.PhoneCallProtocol(
             min_layer=42,

@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetMessagesViewsRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         id=[42],
         increment=False
     ))

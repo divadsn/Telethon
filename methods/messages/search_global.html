@@ -22,7 +22,7 @@ with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.SearchGlobalRequest(
         q='some string here',
         offset_date=datetime.datetime(2018, 6, 25),
-        offset_peer=types.InputPeerSelf(),
+        offset_peer='username',
         offset_id=42,
         limit=100
     ))

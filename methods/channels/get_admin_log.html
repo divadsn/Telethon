@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.channels.GetAdminLogRequest(
-        channel='TelethonOffTopic',
+        channel='username',
         q='some string here',
         max_id=-12398745604826,
         min_id=-12398745604826,
@@ -41,6 +41,6 @@ with TelegramClient(name, api_id, api_hash) as client:
             edit=True,
             delete=True
         ),
-        admins=[types.InputUserSelf()]
+        admins=['username']
     ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

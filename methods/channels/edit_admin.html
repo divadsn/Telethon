@@ -20,8 +20,8 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.channels.EditAdminRequest(
-        channel='TelethonOffTopic',
-        user_id='Lonami',
+        channel='username',
+        user_id='username',
         admin_rights=types.ChannelAdminRights(
             change_info=True,
             post_messages=True,

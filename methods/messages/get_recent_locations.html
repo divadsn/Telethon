@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetRecentLocationsRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         limit=100,
         hash=0
     ))

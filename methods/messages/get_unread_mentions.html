@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetUnreadMentionsRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         offset_id=42,
         add_offset=0,
         limit=100,

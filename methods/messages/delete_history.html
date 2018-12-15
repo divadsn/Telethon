@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.DeleteHistoryRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         max_id=0,
         just_clear=True
     ))

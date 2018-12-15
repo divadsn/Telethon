@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.SendInlineBotResultRequest(
-        peer='TelethonOffTopic',
+        peer='username',
         query_id=-12398745604826,
         id='some string here'
     ))

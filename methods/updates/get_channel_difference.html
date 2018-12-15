@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.updates.GetChannelDifferenceRequest(
-        channel='TelethonOffTopic',
+        channel='username',
         filter=types.ChannelMessagesFilter(
             ranges=[types.MessageRange(
                 min_id=0,

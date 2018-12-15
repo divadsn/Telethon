@@ -20,8 +20,8 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.messages.GetInlineBotResultsRequest(
-        bot=types.InputUserSelf(),
-        peer='TelethonOffTopic',
+        bot='username',
+        peer='username',
         query='some string here',
         offset='some string here',
         geo_point=types.InputGeoPoint(

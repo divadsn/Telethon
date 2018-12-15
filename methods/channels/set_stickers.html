@@ -20,7 +20,7 @@ from telethon import functions, types
 
 with TelegramClient(name, api_id, api_hash) as client:
     result = client(functions.channels.SetStickersRequest(
-        channel='TelethonOffTopic',
+        channel='username',
         stickerset=types.InputStickerSetID(
             id=-12398745604826,
             access_hash=-12398745604826
