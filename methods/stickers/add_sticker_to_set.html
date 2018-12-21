@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>AddStickerToSetRequest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="style" href="../../css/docs.light.css" rel="stylesheet">
+    <link id="style" href="../../css/docs.dark.css" rel="stylesheet">
     <script>
     document.getElementById("style").href = "../../css/docs."
         + (localStorage.getItem("theme") || "light")
@@ -27,7 +27,8 @@ with TelegramClient(name, api_id, api_hash) as client:
         sticker=types.InputStickerSetItem(
             document=types.InputDocument(
                 id=-12398745604826,
-                access_hash=-12398745604826
+                access_hash=-12398745604826,
+                file_reference=b'arbitrary\x7f data \xfa here'
             ),
             emoji='some string here',
             mask_coords=types.MaskCoords(

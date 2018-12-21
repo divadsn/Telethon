@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>GetFileRequest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="style" href="../../css/docs.light.css" rel="stylesheet">
+    <link id="style" href="../../css/docs.dark.css" rel="stylesheet">
     <script>
     document.getElementById("style").href = "../../css/docs."
         + (localStorage.getItem("theme") || "light")
@@ -23,7 +23,8 @@ with TelegramClient(name, api_id, api_hash) as client:
         location=types.InputFileLocation(
             volume_id=-12398745604826,
             local_id=42,
-            secret=-12398745604826
+            secret=-12398745604826,
+            file_reference=b'arbitrary\x7f data \xfa here'
         ),
         offset=42,
         limit=100
